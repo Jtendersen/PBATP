@@ -1,0 +1,24 @@
+# Carpetas generadas por NetBeans y Ant
+/build/
+/dist/
+/nbproject/private/
+/nbproject/build-impl.xml
+
+# Archivos compilados
+*.class
+*.jar
+
+# Logs y temporales
+*.log
+*.tmp
+
+# Mac/Linux
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs comunes (opcional)
+.idea/
+*.iml
+.vscode/

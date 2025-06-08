@@ -11,6 +11,7 @@ public abstract class Personaje {
         this.nombre = nombre;
         this.vida = vidaInicial;
         this.posicion = posicionInicial;
+        this.vivo = vidaInicial > 0;
     }
 
     public String getNombre() {
@@ -31,8 +32,7 @@ public abstract class Personaje {
 
     public void setVida(int v) {
         this.vida = v;
-        if (this.vida <= 0) {
-            this.vida = 0;
+        if (v <= 0) {
             this.vivo = false;
         }
     }

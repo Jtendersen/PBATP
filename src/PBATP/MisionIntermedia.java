@@ -83,7 +83,7 @@ public class MisionIntermedia extends Mision {
                         continue;
                     }
                 }
-                System.out.println("Congratulaciones!!! Llegaste a la puerta y completaste la primera misión!");
+                System.out.println("Congratulaciones!!! Llegaste a la puerta y completaste la misión "+numeroMision+"!!");
                 return true;
             }
 

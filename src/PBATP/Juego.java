@@ -6,7 +6,7 @@ public class Juego {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int misionesCompletadas = 0;
+        int misionesCompletadas = 2;
         boolean salir = false;
 
         while (!salir) {
@@ -29,6 +29,13 @@ public class Juego {
                         if (m2.iniciar()) {
                             misionesCompletadas++;
                         }
+                    } else if (misionesCompletadas == 2) {
+                        MisionFinal mf = new MisionFinal(snake);
+                        if (mf.iniciar()) {
+                            misionesCompletadas++;
+                        }
+                    } else {
+                        System.out.println("Ya completaste todas las misiones! Congratz!");
                     }
                 }
                 case "2" ->

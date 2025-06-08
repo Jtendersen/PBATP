@@ -54,7 +54,7 @@ public class Mapa {
                 int x = rand.nextInt(celdas.length);
                 int y = rand.nextInt(celdas[0].length);
                 p = new Posicion(x, y);
-            } while (p.distanciaAOtra(snake.getPosicion()) < 2
+            } while (p.distanciaAOtra(snake.getPosicion()) <= 2
                     || p.equals(puerta.getPosicion())
                     || (item != null && p.equals(item.getPosicion()))
                     || celdas[p.getX()][p.getY()].tieneEnemigo());
@@ -139,6 +139,10 @@ public class Mapa {
 
     public Posicion getPosicionPuerta() {
         return puerta.getPosicion();
+    }
+    
+    public Guardia[] getGuardias(){
+        return guardias;
     }
 
 }

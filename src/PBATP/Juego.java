@@ -18,10 +18,18 @@ public class Juego {
 
             switch (selectedOption) {
                 case "1" -> {
-                    Snake snake = new Snake("Snake", new Posicion (0,0));
-                    MisionIntermedia mision1 = new MisionIntermedia(snake);
-                    boolean ok = mision1.iniciar();
-                    if (ok) System.out.println("Avanza a la siguiente mision... ");
+                    Snake snake = new Snake("Snake", new Posicion(0, 0));
+                    if (misionesCompletadas == 0) {
+                        MisionIntermedia m1 = new MisionIntermedia(snake, 1);
+                        if (m1.iniciar()) {
+                            misionesCompletadas++;
+                        }
+                    } else if (misionesCompletadas == 1) {
+                        MisionIntermedia m2 = new MisionIntermedia(snake, 2);
+                        if (m2.iniciar()) {
+                            misionesCompletadas++;
+                        }
+                    }
                 }
                 case "2" ->
                     salir = true;
@@ -29,7 +37,6 @@ public class Juego {
                     System.out.println("Opción invalida... :(");
 
             }
-            
 
         }
         System.out.println("Nos vemos en la proxima aventura... ");

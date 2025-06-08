@@ -6,7 +6,7 @@ public class Juego {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int misionesCompletadas = 2;
+        int misionesCompletadas = 0;
         boolean salir = false;
 
         while (!salir) {

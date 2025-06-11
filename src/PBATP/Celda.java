@@ -57,7 +57,7 @@ public class Celda {
             return "G";
         }
         if (item != null) {
-            return item.getNombre() == "Tarjeta" ? "L" : "C4";
+            return item.getNombre().equals("Tarjeta") ? "L" : "C4";
 
         }
         if (esPuerta) {

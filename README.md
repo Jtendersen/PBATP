@@ -1,6 +1,28 @@
-# TP Programación Básica (PBATP)
+# TP Programación Básica – “Escape de la base”
 
-Este repositorio contiene el proyecto Java/NetBeans “PBATP” (Práctico de Programación Básica). A continuación vas a encontrar instrucciones paso a paso para **clonar** el repositorio y **abrirlo/ejecutarlo** en NetBeans, suponiendo que no tenemos mucha exp con Git y NetBeans.
+**Repositorio GitHub:**  
+[https://github.com/tu-usuario/TP-Programacion-Basica](https://github.com/Jtendersen/PBATP)
+
+---
+
+## Integrantes del Grupo 14
+
+- **Gomez Juan** – licgomezjd@gmail.com  
+- **Mendoza Valentina** – vmendoza@frsf.utn.edu.ar  
+- **Robles Maria Eugenia** – mrobles@frsf.utn.edu.ar  
+- **Tierno Juan Manuel** – jtierno@frsf.utn.edu.ar 
+
+---
+
+## Descripción
+
+Juego de consola en Java/NetBeans donde Snake debe completar tres misiones:
+
+1. **Misión 1 – Hangar de Entrada**  
+2. **Misión 2 – Almacén de Armas**  
+3. **Misión 3 – Batalla Final contra Metal Gear**  
+
+Implementa POO: clases, interfaces, herencia y polimorfismo, junto con sistema de guardado/carga de progreso.
 
 ---
 

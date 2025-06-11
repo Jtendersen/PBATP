@@ -1,15 +1,17 @@
-
 package PBATP;
 
-    public abstract class Personaje {
+public abstract class Personaje {
+
     protected String nombre;
     protected int vida;
     protected Posicion posicion;
+    protected boolean vivo;
 
-    public Personaje(String nombre, int vida, Posicion posicion) {
+    public Personaje(String nombre, int vidaInicial, Posicion posicionInicial) {
         this.nombre = nombre;
-        this.vida = vida;
-        this.posicion = posicion;
+        this.vida = vidaInicial;
+        this.posicion = posicionInicial;
+        this.vivo = vidaInicial > 0;
     }
 
     public String getNombre() {
@@ -24,12 +26,18 @@ package PBATP;
         return posicion;
     }
 
-    public void recibirDanio(int cantidad) {
-        vida -= cantidad;
-        if (vida < 0) {
-            vida = 0;
+    public boolean estaVivo() {
+        return vivo;
+    }
+
+    public void setVida(int v) {
+        this.vida = v;
+        if (v <= 0) {
+            this.vivo = false;
         }
     }
 
-    public abstract void mover(int dx, int dy);
+    public void setPosicion(Posicion p) {
+        this.posicion = p;
+    }
 }
